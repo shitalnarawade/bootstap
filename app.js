@@ -59,7 +59,7 @@ function handleFormSubmit(event) {
     listItem.appendChild(editBtn);
     listItem.appendChild(delBtn);
     userList.appendChild(listItem);
-    editBtn.addEventListener("click", function (event) {
+    editBtn.addEventListener("click", function (event) {    
       document.getElementById("amount").value = myExp.amount;
       document.getElementById("description").value = myExp.description;
       document.getElementById("category").value = myExp.category;
