@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appoinment Delete</title>
+
+    <style>
+        .cont {
+            width: 60%;
+            border: 2px solid gray;
+
+        }
+
+        .form_cont {
+            width: 60%;
+            padding: 12px;
+
+        }
+
+        #userlist {
+
+            border: 2px solid black;
+        }
+
+        .ulclass {
+            width: auto;
+        }
+
+        li {
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: rgb(228, 228, 223);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            list-style: none;
+        }
+
+        .delete-btn {
+            align-self: flex-end;
+            background-color: rgb(228, 50, 19);
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 5px 21px;
+            color: #fff;
+        }
+
+        .edit-btn {
+            align-self: flex-end;
+            background-color: rgb(48, 166, 205);
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 5px 10px;
+            margin-top: 5px;
+            align-items: end;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container cont">
+        <div class="form_cont">
+            <h1> Book An Appointment</h1>
+            <form onsubmit="handleFormSubmit(event)">
+                <input type="text" class="form-control" name="username" id="name" placeholder="Name">
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"
+                    placeholder="Email">
+                <input type="number" class="form-control" name="phone" id="phone" placeholder="Phone">
+                <!-- <input type="userid" class="form-control" name="userid" id="userid" placeholder="User Id"> -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+        <ul id="userlist"></ul>
+    </div>
+
+    
+        
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+<script src="./app.js"></script>
+
+</html>
